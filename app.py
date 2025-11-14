@@ -2,6 +2,7 @@ from flask import Flask, redirect, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.run(host='0.0.0.0', port=5000, debug=True)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydb.db'
 db = SQLAlchemy(app)
 
