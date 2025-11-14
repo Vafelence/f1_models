@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Add new post
+{% endblock %}
+
+{% block content %}
+<h1>Add new post</h1>
+
+<form method="post" class="form-control"> 
+    <input type="text" name="team" placeholder="Add team name" class="form-control"><br>
+    <input type="text" name="pilot" placeholder="Add driver name" class="form-control"><br>
+    <input type="text" name="year" placeholder="Add year" class="form-control"><br>
+    <button class="btn btn-success" type="submit">Submit</button>
+ 
+</form>
+{% endblock %}
